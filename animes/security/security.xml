@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- GRUPO GESTOR DE ANIMES -->
+        <record id="grupo_gestor2" model="res.groups">
+            <field name="name">Animes/Gestor animes</field>
+            <field name="comment">Perfil gestor de acceso a las animes</field>
+        </record>
+
+        <!-- GRUPO OPERARIO DE ANIMES -->
+        <record id="grupo_operario2" model="res.groups">
+            <field name="name">Animes/Operario animes</field>
+            <field name="comment">Perfil operario de acceso a las animes</field>
+        </record>
+
+        <!-- Asignación de grupo de permisos Gestor (grupo_gestor) al usuario Administrador -->
+        <record id="base.user_admin" model="res.users">
+            <field name="groups_id" eval="[(4, ref('animes.grupo_gestor2'))]"/>
+        </record>
+
+    </data>
+</odoo>

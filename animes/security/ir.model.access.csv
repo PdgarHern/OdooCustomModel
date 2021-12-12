@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_animes_animes_gestor,animes.animes.gestor,model_animes_animes,animes.grupo_gestor2,1,1,1,1
+access_animes_characters_gestor,animes.characters.gestor,model_animes_characters,animes.grupo_gestor2,1,1,1,1
+access_animes_animes_operario,animes.animes.operario,model_animes_animes,animes.grupo_operario2,1,0,0,0
+access_animes_characters_operario,animes.characters.operario,model_animes_characters,animes.grupo_operario2,1,0,0,0
+access_animes_actors_gestor,animes.actors.gestor,model_animes_actors,animes.grupo_gestor2,1,1,1,1
+access_animes_actors_operario,animes.actors.operario,model_animes_actors,animes.grupo_operario2,1,0,0,0

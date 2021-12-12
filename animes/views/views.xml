@@ -1,0 +1,390 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+
+    <!-- ANIMES -->
+
+    <record model="ir.ui.view" id="animes.animes_tree">
+      <field name="name">animes.animes.tree</field>
+      <field name="model">animes.animes</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="genres"/>
+          <field name="studio"/>
+          <field name="demographic"/>
+          <field name="premiered"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="animes.animes_form">
+      <field name="name">animes.animes.form</field>
+      <field name="model">animes.animes</field>
+      <field name="arch" type="xml">
+        <form>
+          <group colspan="2" col="2">
+            <field name="poster" widget="image" height="180px" width="320px"/>
+            <field name="thumb" widget="image" height="390px" width="260px"/>
+            <field name="name"/>
+            <field name="plot"/>
+            <field name="genres"/>
+            <field name="author"/>
+            <field name="studio"/>
+            <field name="premiered"/>
+            <field name="demographic"/>
+            <field name="episodes"/>
+            <field name="actors">
+              <tree>
+                <field name="name" />
+                <field name="age" />
+                <field name="character" />
+              </tree>
+            </field>
+            <field name="characters">
+              <tree>
+                <field name="name" />
+                <field name="age" />
+                <field name="role" />
+              </tree>
+            </field>
+          </group>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+            <field name="activity_ids" widget="mail_activity"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="animes.animes_kanban">
+      <field name="name">animes.animes.kanban</field>
+      <field name="model">animes.animes</field>
+      <field name="arch" type="xml">
+        <kanban>
+          <field name="id"/>
+          <templates>
+            <t t-name="kanban-box">
+              <div class="oe_kanban_global_click">
+                <div class="o_kanban_image">
+                  <img t-att-src="kanban_image('animes.animes', 'thumb', record.id.raw_value)"/>
+                </div>
+                <div class="oe-kanban-details">
+                  <strong>
+                    <field name="name"/><br/>
+                  </strong>
+                  <br/>
+                  <strong>Genres:</strong>
+                  <field name="genres"/><br/>
+                  <strong>Demographic:</strong>
+                  <field name="demographic"/>
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
+    <!-- CHARACTERS -->
+
+    <record model="ir.ui.view" id="animes.characters_tree">
+      <field name="name">animes.characters.tree</field>
+      <field name="model">animes.characters</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="gender"/>
+          <field name="age"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="animes.characters_form">
+      <field name="name">animes.characters.form</field>
+      <field name="model">animes.characters</field>
+      <field name="arch" type="xml">
+        <form>
+          <group colspan="2" col="2">
+            <field name="thumb" widget="image" height="260px" width="260px"/>
+            <field name="name"/>
+            <field name="gender"/>
+            <field name="age"/>
+            <field name="role"/>
+            <field name="anime" />
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="animes.characters_kanban">
+      <field name="name">animes.characters.kanban</field>
+      <field name="model">animes.characters</field>
+      <field name="arch" type="xml">
+        <kanban>
+          <field name="id"/>
+          <templates>
+            <t t-name="kanban-box">
+              <div class="oe_kanban_global_click">
+                <div class="o_kanban_image">
+                  <img t-att-src="kanban_image('animes.characters', 'thumb', record.id.raw_value)"/>
+                </div>
+                <div class="oe-kanban-details">
+                  <strong>
+                    <field name="name"/><br/>
+                  </strong>
+                  <strong>Age:</strong>
+                  <field name="age"/><br/>
+                  <strong>Role:</strong>
+                  <field name="role"/>
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
+    <!-- ACTORS -->
+
+    <record model="ir.ui.view" id="animes.actors_tree">
+      <field name="name">animes.actors.tree</field>
+      <field name="model">animes.actors</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="gender"/>
+          <field name="age"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="animes.actors_form">
+      <field name="name">animes.actors.form</field>
+      <field name="model">animes.actors</field>
+      <field name="arch" type="xml">
+        <form>
+          <group colspan="2" col="2">
+            <field name="thumb" widget="image" height="260px" width="260px"/>
+            <field name="name"/>
+            <field name="gender"/>
+            <field name="age"/>
+            <field name="character"/>
+            <field name="anime"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="animes.actors_kanban">
+      <field name="name">animes.actors.kanban</field>
+      <field name="model">animes.actors</field>
+      <field name="arch" type="xml">
+        <kanban>
+          <field name="id"/>
+          <templates>
+            <t t-name="kanban-box">
+              <div class="oe_kanban_global_click">
+                <div class="o_kanban_image">
+                  <img t-att-src="kanban_image('animes.actors', 'thumb', record.id.raw_value)"/>
+                </div>
+                <div class="oe-kanban-details">
+                  <strong>
+                    <field name="name"/><br/>
+                  </strong>
+                  <strong>Gender:</strong>
+                  <field name="gender"/><br/>
+                  <strong>Age:</strong>
+                  <field name="age"/>
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
+
+    <!-- USERS -->
+
+    <!-- <record model="ir.ui.view" id="animes.users_tree">
+      <field name="name">animes.users.tree</field>
+      <field name="model">animes.users</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="email"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="animes.users_form">
+      <field name="name">animes.users.form</field>
+      <field name="model">animes.users</field>
+      <field name="arch" type="xml">
+        <form>
+          <group colspan="2" col="2">
+            <field name="thumb" widget="image" height="260px" width="260px"/>
+            <field name="name"/>
+            <field name="email"/>
+            <field name="animes">
+              <tree>
+                <field name="name" />
+                <field name="genres" />
+                <field name="author" />
+              </tree>
+            </field>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="animes.users_kanban">
+      <field name="name">animes.users.kanban</field>
+      <field name="model">animes.users</field>
+      <field name="arch" type="xml">
+        <kanban>
+          <field name="id"/>
+          <templates>
+            <t t-name="kanban-box">
+              <div class="oe_kanban_global_click">
+                <div class="o_kanban_image">
+                  <img t-att-src="kanban_image('animes.users', 'thumb', record.id.raw_value)"/>
+                </div>
+                <div class="oe-kanban-details">
+                  <strong>
+                    <field name="name"/><br/>
+                  </strong>
+                  <strong>Email:</strong>
+                  <field name="email"/><br/>
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record> -->
+
+    <!--  -->
+
+    <record id="res_partner_view_form_inherit_animes" model="ir.ui.view">
+      <field name="name">res.partner.view.form.inherit.animes</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//page[@name='internal_notes']" position="after">
+          <page string="Animes" name="Ficha_animes_clientes">
+            <field name="animes">
+              <tree>
+                <field name="name"/>
+                <field name="genres" />
+                <field name="author" />
+              </tree>
+            </field>
+          </page>
+        </xpath>
+      </field>
+    </record>
+
+    <!-- ACTIONS -->
+
+    <record model="ir.actions.act_window" id="animes.animes_action_window">
+      <field name="name">animes</field>
+      <field name="res_model">animes.animes</field>
+      <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="animes.characters_action_window">
+      <field name="name">characters</field>
+      <field name="res_model">animes.characters</field>
+      <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="animes.actors_action_window">
+      <field name="name">actors</field>
+      <field name="res_model">animes.actors</field>
+      <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <!-- <record model="ir.actions.act_window" id="animes.users_action_window">
+      <field name="name">users</field>
+      <field name="res_model">animes.users</field>
+      <field name="view_mode">kanban,tree,form</field>
+    </record> -->
+
+    <!-- MENÚ PRINCIPAL APLICACIÓN ANIMES -->
+    <menuitem name="Animes" id="animes.menu_root"/>
+
+    <!-- SUBMENÚ ANIMES -->
+    <menuitem name="Animes" id="animes.animes_menu"
+              parent="animes.menu_root"/>
+
+    <!-- OPCIONES DEL MENÚ ANIMES -->
+    <menuitem name="Animes" id="animes.animes_menu_animes"
+              parent="animes.animes_menu" action="animes.animes_action_window"/>
+    <menuitem name="Characters" id="animes.animes_menu_characters"
+              parent="animes.animes_menu" action="animes.characters_action_window"/>
+    <menuitem name="Actors" id="animes.animes_menu_actors"
+              parent="animes.animes_menu" action="animes.actors_action_window"/>
+    <!-- <menuitem name="Users" id="animes.animes_menu_users"
+              parent="animes.animes_menu" action="animes.users_action_window"/> -->
+
+<!--
+    <record model="ir.ui.view" id="animes.list">
+      <field name="name">animes list</field>
+      <field name="model">animes.animes</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="animes.action_window">
+      <field name="name">animes window</field>
+      <field name="res_model">animes.animes</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="animes.action_server">
+      <field name="name">animes server</field>
+      <field name="model_id" ref="model_animes_animes"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="animes" id="animes.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="animes.menu_1" parent="animes.menu_root"/>
+    <menuitem name="Menu 2" id="animes.menu_2" parent="animes.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="animes.menu_1_list" parent="animes.menu_1"
+              action="animes.action_window"/>
+    <menuitem name="Server to list" id="animes" parent="animes.menu_2"
+              action="animes.action_server"/>
+-->
+  </data>
+</odoo>
