@@ -31,6 +31,7 @@ For this project I also had some requirements to match. So let me explain a bit 
 <ol>
   <li>New classes for the new module.</li>
   <li>New views for the new module.</li>
+  <li>Inherited classes from other Odoo module existing class.</li>
   <li>Inherited views in other views already existing from other Odoo module.</li>
   <li>Actions, Menu elements and Group Rights.</li>
   <li>Inclusion of One2many and Many2one fields.</li>
