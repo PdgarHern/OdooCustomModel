@@ -80,3 +80,24 @@ So, if we hit the *Save* button a message (an activity, actually) will appear to
 </div>
 
 ###
+With an *anime* created, we now can create *actors* and *characters* associated to that *anime*.<br/>
+Both can be created the same two ways:
+<ol>
+  <li>From the anime itself.</li>
+  <!-- <ul></ul> -->
+  <div align="center">
+    <img src="/imgs/cAdd1.png" alt="cAdd1" width="600" />
+  </div>
+  <li>Going to its own page.</li>
+  <div align="center">
+    <img src="/imgs/cGo.png" alt="cGo" width="600" />
+    <img src="/imgs/cAdd2.png" alt="cAdd2" />
+  </div>
+</ol>
+
+###
+Either way, you'll end up with the same result.
+<div align="center">
+  <img src="imgs/animeC.png" alt="animeC" width="600" />
+  <img src="imgs/character.png" alt="character" width="600" />
+</div>
