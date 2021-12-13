@@ -134,6 +134,8 @@ If we now create a new *task* for our project, it will automaticly generate an a
   <img src="imgs/task.png" alt="task" />
 </div>
 <br/>
+
+###
 This is posible because of <a href="animes/models/automatic_activity.py">this</a> file from our module.<br/>
 In this file, we create a new class that inherites from ```project.task``` and we generate the code necessary to achieve what we want.<br/>
 So, enough said for this little detail.<br/>
