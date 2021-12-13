@@ -45,14 +45,38 @@ For this project I also had some requirements to match. So let me explain a bit 
 
 # How it works
 First, we have to install the module.<br/>
-<br/>
 <div align="center">
   <img src="imgs/install.png" alt="install" widht="600" />
 </div>
 
 ###
 This will not just install our module, it will also install another modules like *Project* or *Invoicing* that we'll need to use our module.<br/>
-<br/>
 <div align="center">
   <img src="imgs/modules.png" alt="modules" />
 </div>
+
+###
+When you first enter the *Animes* module, you'll be in *anime*.<br/>
+So, let's create a new one.<br/>
+<div align="center">
+  <img src="imgs/newAnime.png" alt="newAnime" width="600" />
+</div>
+
+###
+Now, you may start to notice a few things.<br/>
+Here, I've integrated a *mail box* from Odoo. This is made to match two of the requirements:
+<ol>
+  <li>Integrate an existing Odoo functionality</li>
+  <li>The workflow</li>
+</ol>
+<div align="center">
+  <img src="imgs/mailBox.png" alt="mailBox" width="600" />
+</div>
+
+###
+So, if we hit the *Save* button a message (an activity, actually) will appear to the *Administrator* user.
+<div align="center">
+  <img src="imgs/workflow.png" alt="workflow" width="600" />
+</div>
+
+###
