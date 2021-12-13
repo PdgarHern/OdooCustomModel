@@ -138,4 +138,18 @@ This is posible because of <a href="animes/models/automatic_activity.py">this</a
 In this file, we create a new class that inherites from ```project.task``` and we generate the code necessary to achieve what we want.<br/>
 So, enough said for this little detail.<br/>
 <br/>
+Let's now talk about the last two things.<br/>
+I found myself with the need to create an *inherited view* for some other *Odoo module*. And I also had to create something out of my mind.<br/>
+My original *Animes* project mencioned before had these 'Favourite' lists.<br/>
+Each user could add an *anime* to his favourites, or delete it.<br/>
+<br/>
+So, I decided to create a *Many2many* relathionship as my personal contribution. I just needed users.<br/>
+For that, I used the *Invoicing* module, which has *customers* that I will use as my users.<br/>
+This way, I also covered the point of creating an *inherited view* on an existing module, because the *animes* agregated to 'Favourites' will appear on every *Invoicing Customer*.
+<div align="center">
+  <img src="imgs/many2many.png" alt="many2many" />
+</div>
 
+###
+With that, we've finished covering all the functionalities of my new module.<br/>
+I hope you have enjoyed it or that it has been useful in some way.
