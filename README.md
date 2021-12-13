@@ -70,13 +70,13 @@ Here, I've integrated a *mail box* from Odoo. This is made to match two of the r
   <li>The workflow</li>
 </ol>
 <div align="center">
-  <img src="imgs/mailBox.png" alt="mailBox" width="600" />
+  <img src="imgs/mailBox.png" alt="mailBox" />
 </div>
 
 ###
 So, if we hit the *Save* button a message (an activity, actually) will appear to the *Administrator* user.
 <div align="center">
-  <img src="imgs/workflow.png" alt="workflow" width="600" />
+  <img src="imgs/workflow.png" alt="workflow" />
 </div>
 
 ###
