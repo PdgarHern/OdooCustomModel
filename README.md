@@ -116,5 +116,5 @@ So, our next stop is the *Group Rights*.<br/>
 ###
 The module has two groups with different *access rights*. I encourage you to look up what *rigts* each of them gives you instead of me telling it here.
 <div align="center">
-  <img src="twoGs.png" alt="twoGs" />
+  <img src="imgs/twoGs.png" alt="twoGs" />
 </div>
