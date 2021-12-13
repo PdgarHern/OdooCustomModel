@@ -99,5 +99,5 @@ Both can be created the same two ways:
 Either way, you'll end up with the same result.
 <div align="center">
   <img src="imgs/animeC.png" alt="animeC" width="600" />
-  <img src="imgs/character.png" alt="character" width="600" />
+  <img src="imgs/character.png" alt="character" width="300" />
 </div>
