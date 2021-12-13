@@ -84,11 +84,12 @@ With an *anime* created, we now can create *actors* and *characters* associated 
 Both can be created the same two ways:
 <ol>
   <li>From the anime itself.</li>
-  <!-- <ul></ul> -->
+  <br/>
   <div align="center">
     <img src="/imgs/cAdd1.png" alt="cAdd1" width="600" />
   </div>
   <li>Going to its own page.</li>
+  <br/>
   <div align="center">
     <img src="/imgs/cGo.png" alt="cGo" width="600" />
     <img src="/imgs/cAdd2.png" alt="cAdd2" />
@@ -100,4 +101,20 @@ Either way, you'll end up with the same result.
 <div align="center">
   <img src="imgs/animeC.png" alt="animeC" width="600" />
   <img src="imgs/character.png" alt="character" width="300" />
+</div>
+
+###
+Thus far, we've seen some new classes and views.<br/>
+We've seen other modules being inherited and adding new funcionalities.<br/>
+As well as the Actions, Menu elements, the inclusion of One2Many and Many2One fields and the workflow (We still have to see an extra detail on this last one).<br/>
+<br/>
+So, our next stop is the *Group Rights*.<br/>
+<div align="center">
+  <img src="imgs/groups.png" alt="groups" />
+</div>
+
+###
+The module has two groups with different *access rights*. I encourage you to look up what *rigts* each of them gives you instead of me telling it here.
+<div align="center">
+  <img src="twoGs.png" alt="twoGs" />
 </div>
