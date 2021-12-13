@@ -1,7 +1,7 @@
 <br/>
 <div align="center">
   <a href="https://github.com/PdgarHern/ReactWithRubyUsingPostregSQL">
-    <img src="documentation/images/Anime.png" alt="Logo" width="400" />
+    <img src="imgs/odoo_logo.png" alt="Logo" width="400" />
   </a>
   <h3 align="center">Anime Odoo module</h3>
   <br/>
