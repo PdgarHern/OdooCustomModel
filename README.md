@@ -118,3 +118,24 @@ The module has two groups with different *access rights*. I encourage you to loo
 <div align="center">
   <img src="imgs/twoGs.png" alt="twoGs" />
 </div>
+
+###
+We have two requirements left (one of them being the *personal addition*) and they're actually related.<br/>
+But first, let's see that little detail I mencioned about the workflow.<br/>
+That has to be with the *Project* module, so let's head there.<br/>
+<div align="center">
+  <img src="imgs/project.png" alt="project" />
+</div>
+
+###
+As you can see, I already have a project that we are going to use.<br/>
+If we now create a new *task* for our project, it will automaticly generate an activity to the user the *task* is assigned to.<br/>
+<div align="center">
+  <img src="imgs/task.png" alt="task" />
+</div>
+<br/>
+This is posible because of <a href="animes/models/automatic_activity.py">this</a> file from our module.<br/>
+In this file, we create a new class that inherites from ```project.task``` and we generate the code necessary to achieve what we want.<br/>
+So, enough said for this little detail.<br/>
+<br/>
+
