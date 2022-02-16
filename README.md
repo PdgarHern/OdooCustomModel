@@ -275,7 +275,12 @@ You can create and store different queries you can execute at any moment and you
 </div>
 
 ###
-This leads as to the final module.
+This leads us to the final module.
 
 ### Report Preview
-
+This is a simple module.<br/>
+<br/>
+The only thing that it does is to allow you to see a preview of the report you're going to download before doing so whenever you hit the "Print" button anywhere.<br/>
+<br/>
+For example, when I hit the "Print" button in the previous module, it would have normally downloaded the report.<br/>
+Using this other module, we open a new window to see our report instead of directly downloading it.
