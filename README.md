@@ -13,16 +13,25 @@
     <li>
       <a href="#odoo-custom-module">Odoo Custom Module</a>
       <ul>
-        <li><a href="#requirements">Requirements</a></li>
+        <li>
+          <a href="#part-1">Part1</a>
+          <ul>
+            <li>
+              <a href="#requirements">Requirements</a>
+            </li>
+            <li>
+              <a href="#how-it-works">How it works</a>
+            </li>
+          </ul>
+        </li>
       </ul>
-    </li>
-    <li>
-      <a href="#how-it-works">How it works</a>
     </li>
   </ol>
 </details>
 
 # Odoo Custom Module
+
+## Part 1
 Welcome to my Odoo custom module.<br/>
 <br/>
 My job was to create a module about the same topic and with the same functionalities as another project that I was doing.<br/>
