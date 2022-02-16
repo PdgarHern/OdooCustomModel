@@ -205,3 +205,11 @@ Then, we have two tables (one for the characters and other for the actors).<br/>
 Each "td" of the tables has a hoover property so the color changes when placing your cursor over it.
 
 ### Styling
+Some styles have been changed.<br/>
+Our app itself now looks different. Now it's like Odoo has its own dark mode.<br/>
+<div align="center">
+  <img src="imgs/animeDarkMode.PNG" alt="report" />
+</div>
+<div align="center">
+  <img src="imgs/FormViewDarkMode.PNG" alt="report" />
+</div>
