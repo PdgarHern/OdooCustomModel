@@ -213,3 +213,22 @@ Our app itself now looks different. Now it's like Odoo has its own dark mode.<br
 <div align="center">
   <img src="imgs/FormViewDarkMode.PNG" alt="report" />
 </div>
+
+###
+Also, other Odoo aspects have changed as well. Like the "App" page.<br/>
+<div align="center">
+  <img src="imgs/appDarkMode.PNG" alt="report" />
+</div>
+
+###
+Lastly, a deatle has been added to every *kanbas view*. That's a transform when hoover.<br/>
+<br/>
+Hoover off (on "Employees"):<br/>
+<div align="center">
+  <img src="imgs/kanbasHoverOff.PNG" alt="report" />
+</div>
+<br/>
+Hoover on (on "Employees"):<br/>
+<div align="center">
+  <img src="imgs/kanbasHoverOn.PNG" alt="report" />
+</div>
