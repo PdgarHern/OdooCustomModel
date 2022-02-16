@@ -14,13 +14,21 @@
       <a href="#odoo-custom-module">Odoo Custom Module</a>
       <ul>
         <li>
-          <a href="#part-1">Part1</a>
+          <a href="#part-1">Part 1</a>
           <ul>
             <li>
               <a href="#requirements">Requirements</a>
             </li>
             <li>
               <a href="#how-it-works">How it works</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#part-2">Part 2</a>
+          <ul>
+            <li>
+              <a href="#reports">Reports</a>
             </li>
           </ul>
         </li>
@@ -52,7 +60,7 @@ For this project I also had some requirements to match. So let me explain a bit 
   <li>Some personal addition to the module</li>
 </ol>
 
-# How it works
+### How it works
 First, we have to install the module.<br/>
 <div align="center">
   <img src="imgs/install.png" alt="install" widht="600" />
@@ -163,4 +171,11 @@ This way, I also covered the point of creating an *inherited view* on an existin
 
 ###
 With that, we've finished covering all the functionalities of my new module.<br/>
-I hope you have enjoyed it or that it has been useful in some way.
+I hope you have enjoyed it or that it has been useful in some way.<br/>
+
+## Part 2
+We have some new things added in our module.<br/>
+<br/>
+I will now explain these additions, where to found them and how they work.<br/>
+
+### Reports
