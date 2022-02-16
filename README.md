@@ -30,6 +30,9 @@
             <li>
               <a href="#reports">Reports</a>
             </li>
+            <li>
+              <a href="#styling">Styling</a>
+            </li>
           </ul>
         </li>
       </ul>
@@ -193,3 +196,12 @@ Select *"Reporte Animes"* and this will show you the following report:<br/>
 <div align="center">
   <img src="imgs/reporte.PNG" alt="report" />
 </div>
+
+###
+Our report has a header and a footer.<br/>
+Also, it shows the app logo, the poster of the anime and its name.<br/>
+<br/>
+Then, we have two tables (one for the characters and other for the actors).<br/>
+Each "td" of the tables has a hoover property so the color changes when placing your cursor over it.
+
+### Styling
