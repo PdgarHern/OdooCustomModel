@@ -42,6 +42,9 @@
                 <li>
                   <a href="#query-deluxe">Query Deluxe</a>
                 </li>
+                <li>
+                  <a href="#report-preview">Report Preview</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -219,16 +222,16 @@ Each "td" of the tables has a hoover property so the color changes when placing 
 Some styles have been changed.<br/>
 Our app itself now looks different. Now it's like Odoo has its own dark mode.<br/>
 <div align="center">
-  <img src="imgs/animeDarkMode.PNG" alt="report" />
+  <img src="imgs/animeDarkMode.PNG" alt="animeDM" />
 </div>
 <div align="center">
-  <img src="imgs/FormViewDarkMode.PNG" alt="report" />
+  <img src="imgs/FormViewDarkMode.PNG" alt="formDM" />
 </div>
 
 ###
 Also, other Odoo aspects have changed as well. Like the "App" page.<br/>
 <div align="center">
-  <img src="imgs/appDarkMode.PNG" alt="report" />
+  <img src="imgs/appDarkMode.PNG" alt="appDM" />
 </div>
 
 ###
@@ -236,12 +239,12 @@ Lastly, a detail has been added to every *kanbas view*. That's a transform when 
 <br/>
 Hoover off (on "Employees"):<br/>
 <div align="center">
-  <img src="imgs/kanbasHoverOff.PNG" alt="report" />
+  <img src="imgs/kanbasHoverOff.PNG" alt="kanbasOff" />
 </div>
 <br/>
 Hoover on (on "Employees"):<br/>
 <div align="center">
-  <img src="imgs/kanbasHoverOn.PNG" alt="report" />
+  <img src="imgs/kanbasHoverOn.PNG" alt="kanbasOn" />
 </div>
 
 
@@ -252,4 +255,27 @@ The project includes three *Third parties modules*.
 This is the first module I included and doesn't work properly as it needs more dependencies to do so. The only thing you could achieve is to get your exact location when creating a "Contact" in the *Invoice* app, for example.
 
 #### Query Deluxe
+The second module help us to check information from the *Odoo database* without using any external program like "pgAdmin".<br/>
+<br/>
+It also includes some example queries to help in the process.<br/>
+<div align="center">
+  <img src="imgs/query1.PNG" alt="q1" />
+</div>
+<div align="center">
+  <img src="imgs/query2.PNG" alt="q2" />
+</div>
+
+###
+You can create and store different queries you can execute at any moment and you can even print the results.<br/>
+<div align="center">
+  <img src="imgs/query3.PNG" alt="q3" />
+</div>
+<div align="center">
+  <img src="imgs/query4.PNG" alt="q4" />
+</div>
+
+###
+This leads as to the final module.
+
+### Report Preview
 
