@@ -179,3 +179,17 @@ We have some new things added in our module.<br/>
 I will now explain these additions, where to found them and how they work.<br/>
 
 ### Reports
+Special reports have been created for the *Animes* of our application.
+
+###
+Now, you can go to the *form view* of any anime and click *"Print"*.
+
+###
+Select *"Reporte Animes"* and this will show you the following report:<br/>
+<br/>
+<div align="center">
+  <img src="imgs/animeR.PNG" alt="anime" />
+</div>
+<div align="center">
+  <img src="imgs/reporte.PNG" alt="report" />
+</div>
