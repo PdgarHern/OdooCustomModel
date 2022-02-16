@@ -33,6 +33,17 @@
             <li>
               <a href="#styling">Styling</a>
             </li>
+            <li>
+              <a href="#third-parties-modules">Third parties modules</a>
+              <ul>
+                <li>
+                  <a href="#google-maps">Google Maps</a>
+                </li>
+                <li>
+                  <a href="#query-deluxe">Query Deluxe</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -221,7 +232,7 @@ Also, other Odoo aspects have changed as well. Like the "App" page.<br/>
 </div>
 
 ###
-Lastly, a deatle has been added to every *kanbas view*. That's a transform when hoover.<br/>
+Lastly, a detail has been added to every *kanbas view*. That's a transform when hoover.<br/>
 <br/>
 Hoover off (on "Employees"):<br/>
 <div align="center">
@@ -232,3 +243,13 @@ Hoover on (on "Employees"):<br/>
 <div align="center">
   <img src="imgs/kanbasHoverOn.PNG" alt="report" />
 </div>
+
+
+### Third parties modules
+The project includes three *Third parties modules*.
+
+#### Google Maps
+This is the first module I included and doesn't work properly as it needs more dependencies to do so. The only thing you could achieve is to get your exact location when creating a "Contact" in the *Invoice* app, for example.
+
+#### Query Deluxe
+
