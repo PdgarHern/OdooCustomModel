@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+    
+        <record model="ir.actions.report" id="animes.animes_animes_report">
+            <field name="name">Reporte Animes</field>
+            <field name="model">animes.animes</field>
+            <field name="report_type">qweb-html</field>
+            <field name="report_name">animes.animes_report_template</field>
+            <field name="report_file">animes.animes_report_template</field>
+            <field name="binding_model_id" ref="animes.model_animes_animes"/>
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

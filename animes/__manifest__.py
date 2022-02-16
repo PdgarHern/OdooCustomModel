@@ -28,6 +28,8 @@
         'views/templates.xml',
         'security/security.xml',
         'security/ir.model.access.csv',
+        'reports/animes_report.xml',
+        'reports/animes_report_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

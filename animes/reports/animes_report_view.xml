@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding='utf-8'?>
+
+<odoo>
+    <data>
+    
+        <template id="animes_report_template">
+            <t t-call="web.html_container">
+                <head>
+                    <style>
+                        .table1 {
+                            border: 1px solid #000000;
+                            border-spacing: 0px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            align: center; 
+
+                        }
+                        .table1 tbody tr:hover {
+                            background-color: #d6dbdf;
+                        }
+                        .table2 {
+                            width: 100%;
+                            border-bottom: 3px solid #000000;
+                            align: center;
+                        }
+                        .tr2 {
+                            border-bottom: 1px solid #000000;
+                            background-color: rgb(223, 116, 116);
+                        }
+
+                        .tr1 {
+                            border-bottom: 1px solid #000000
+                        }
+
+                    </style>
+                </head>
+                <div class="page">
+                    <p align="right">Anime Report</p>
+                    <br/>
+                    <t t-foreach='docs' t-as='o'>
+                        <table class="table2">
+                            <tr>
+                                <td colspan="3" align="center">
+                                    <img class="logo" t-attf-src="/animes/static/description/icon.png" height="100px"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" align="left">
+                                    <b><span t-field="o.name"/></b>
+                                </td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <div width="100%" align="center">
+                            <img t-attf-src="data:image/*;base64,{{o.poster}}" height="200px"/>
+                        </div>
+                        <br/><br/>
+                        <table class="table1">
+                            <thead>
+                                <tr class="tr2">
+                                    <td width="300" align="center">
+                                        <font size="5"><b>Character</b></font>
+                                    </td>
+                                    <td width="300" align="center">
+                                        <font size="5"><b>Age</b></font>
+                                    </td>
+                                    <td width="300" align="center">
+                                        <font size="5"><b>Gender</b></font>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="tr1" t-foreach='o.characters' t-as='line' align="center">
+                                    <td class="td1" width="300">
+                                        <span t-esc="line.name"/>
+                                    </td>
+                                    <td class="td1" width="300" align="center">
+                                        <span t-esc="line.age"/>
+                                    </td>
+                                    <td class="td1" width="300" align="center">
+                                        <span t-esc="line.gender"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br/><br/>
+                        <table class="table1">
+                            <thead>
+                                <tr class="tr2">
+                                    <td width="300" align="center">
+                                        <font size="5"><b>Actor</b></font>
+                                    </td>
+                                    <td width="300" align="center">
+                                        <font size="5"><b>Age</b></font>
+                                    </td>
+                                    <td width="300" align="center">
+                                        <font size="5"><b>Gender</b></font>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="tr1" t-foreach='o.actors' t-as='line' align="center">
+                                    <td class="td1" width="300">
+                                        <span t-esc="line.name"/>
+                                    </td>
+                                    <td class="td1" width="300" align="center">
+                                        <span t-esc="line.age"/>
+                                    </td>
+                                    <td class="td1" width="300" align="center">
+                                        <span t-esc="line.gender"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </t>
+                    <br/>
+                    <p align="right">Created by Pedro</p>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

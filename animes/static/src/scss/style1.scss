@@ -1,0 +1,104 @@
+.o_main_navbar {
+    color: rgb(0, 0, 0);
+    background-color: rgb(223, 116, 116);
+    >.o_menu_brand {
+        color: rgb(0, 0, 0);
+    }
+    >ul {
+        >li {
+            >a,
+            >label {
+                color: rgb(0, 0, 0);
+            }
+            &.o_extra_menu_items {
+                &.show>ul {
+                    >li {
+                        >a {
+                            color: rgb(0, 0, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dropdown-menu.show {
+        background-color: rgb(247, 196, 196);
+    }
+    .dropdown-toggle {
+        color: black !important;
+    }
+}
+
+.o_content {
+    //color: white;
+    background-color: #1c1c1c;
+}
+
+.o_control_panel {
+    background-color: #535353 !important;
+    border: 1px solid black !important;
+}
+
+.breadcrumb {
+    background-color: #535353 !important;
+}
+
+.breadcrumb-item {
+    color: white !important;
+}
+
+.o_kanban_record {
+    color: white;
+    background-color: #535353 !important;
+    border: 1px solid #1c1c1c !important;
+    border-radius: 10px !important;
+    transition: transform .2s;
+}
+
+.o_kanban_record:hover {
+    transform: scale(1.1);
+}
+
+.dropdown-toggle {
+    color: rgb(223, 116, 116) !important;
+}
+
+.o_search_panel {
+    color: white;
+    background-color: #535353 !important;
+    border-right: 1px solid #1c1c1c !important;
+    >.o_search_panel_category .o_search_panel_section_icon {
+        color: rgb(223, 116, 116) !important;
+    }
+    .list-group-item {
+        background-color: #535353 !important;
+        header.active {
+            background-color: rgba(223, 116, 116, 0.3) !important;
+        }
+        header:hover {
+            background-color: #1c1c1c !important;
+        }
+        header.active:hover {
+            background-color: rgb(223, 116, 116) !important;
+        }
+    }
+}
+
+.o_search_panel_label_title {
+    color: white !important;
+}
+
+.o_dropdown_toggler_btn {
+    background-color: rgb(223, 116, 116) !important;
+    border: 1px solid rgb(223, 116, 116) !important;
+    border-radius: 10px !important;
+}
+
+.btn {
+    border-radius: 10px !important;
+}
+
+.o_form_view {
+    color: black;
+    background-color: #eee !important;
+}
